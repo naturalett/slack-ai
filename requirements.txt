@@ -1,0 +1,4 @@
+slack-bolt==1.16.2
+google-cloud-bigquery==3.11.4
+google-cloud-aiplatform==1.25.0
+PyYAML==6.0

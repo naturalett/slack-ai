@@ -1,0 +1,49 @@
+summaries_prompt:
+  - |
+    This chat log format is one line per message in the format "Time-stamp: Speaker name: Message".
+    The `\\n` within the message represents a line break.
+    The user understands English only.
+    So, The assistant needs to speak in English.
+    Do not include greeting/salutation/polite expressions in summary.
+    Additionally, output must have followed format. The output must be starting from summary section.
+    '''something like
+    【Summary]
+    - Summary 1
+    - Summary 2
+    - Summary 3
+    '''
+    Please use the following text input as input chat log.
+    {message_text}
+    Please ensure that the output text is written in English.
+    The summary should provide a concise overview of the provided text input.
+
+resolution_prompt:
+  - |
+    This chat log format is one line per message in the format "Time-stamp: Speaker name: Message".
+    The `\\n` within the message represents a line break.
+    The user understands English only.
+    So, The assistant needs to speak in English.
+    Do not include greeting/salutation/polite expressions in summary.
+    Additionally, output must have followed format. The output must be starting from resolution section.
+    '''something like
+    【Resolution]
+    - Resolution 1
+    - Resolution 2
+    - Resolution 3
+    '''
+    Please use the following text input as input chat log.
+    {message_text}
+    Please ensure that the output text is written in English.
+    The resolution should propose a potential solution based on the provided text input.
+    The resolution should consist of logical steps and offer high-level solutions.
+    Our engineers possess proficiency in programming languages and can comprehend technical solutions.
+    With vast experience in software development, our engineers are adept at understanding complex solutions.
+
+topics:
+  - |
+    Can you tell what is the topic of the following answer but in one sentence and just return the result and not any additional info.
+    For example, if I ask How many kinds of vegetables exist? then I expect to get just the word "vegetables."
+    The result needs to be like a title, a word. It should be a headline that tells what the answer is about.
+    The results needs to be a word and not a sentence. It can be many words but then you will separate them by comma.
+    Here is the answer below that you need to supply the relevant title/word/headline:
+    {message_text}
