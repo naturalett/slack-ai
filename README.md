@@ -16,7 +16,7 @@ Table of contents
 
 Create Slack App
 ============
-1. Login to your Slack App [here](https://api.slack.com/apps/<LOGIN ID>)
+1. Login to your Slack App [here](https://api.slack.com/apps/LOGIN_ID)
 2. Create a new App [here](https://api.slack.com/apps?new_app=1)
 3. Choose `From Scratch`
 4. Give App Name: `Slack-AI-Tool`
